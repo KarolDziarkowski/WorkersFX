@@ -1,0 +1,2 @@
+
+This project is a Workers Management System built with JavaFX and Java. It allows users to manage employees by adding, removing, and modifying their details, including name, salary, and work condition. Employees are organized into groups with defined capacities. The system features real-time data binding using TableView and ListView, supporting filtering, sorting, and displaying employee information. The user interface is designed with JavaFX FXML files, providing an intuitive way to interact with employee and group data.
