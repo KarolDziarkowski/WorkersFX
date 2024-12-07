@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.workersfxx.MainController" spacing="10" alignment="TOP_CENTER">
+    <HBox spacing="20">
+        <!-- Group ListView -->
+        <ListView fx:id="groupListView" prefWidth="200" />
+        <VBox spacing="10">
+            <!-- Employee Filter -->
+            <TextField fx:id="textFilter" promptText="Filter by Last Name" />
+            <!-- Employee Table -->
+            <TableView fx:id="employeeTableView" prefHeight="400">
+                <columns>
+                    <TableColumn text="First Name" fx:id="colName" />
+                    <TableColumn text="Last Name" fx:id="colSurname" />
+                    <TableColumn text="Condition" fx:id="colCondition" />
+                    <TableColumn text="Year of Birth" fx:id="colBirthYear" />
+                    <TableColumn text="Salary" fx:id="colSalary" />
+                </columns>
+            </TableView>
+            <!-- Action Buttons -->
+            <HBox spacing="10">
+                <Button text="Add Employee" fx:id="addEmployeeBtn" onAction="#onAddEmployee" />
+                <Button text="Remove Employee" fx:id="removeEmployeeBtn" onAction="#onRemoveEmployee" />
+                <Button text="Modify Employee" fx:id="modifyEmployeeBtn" onAction="#onModifyEmployee" />
+            </HBox>
+        </VBox>
+    </HBox>
+</VBox>
